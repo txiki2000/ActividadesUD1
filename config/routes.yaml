@@ -1,0 +1,24 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+viajes:
+    path: /viajes
+    controller: App\Controller\HomeController::viajes
+deportes:
+    path: /deportes
+    controller: App\Controller\HomeController::deportes
+cine:
+    path: /cine
+    controller: App\Controller\HomeController::cine
+home:
+    path: /home
+    controller: App\Controller\HomeController::index
+noticias:
+    path: /noticias/{categoria}/{provincia}
+    controller: App\Controller\NoticiasController::index
+sumar:
+    path: /calculos/sumar/{num1}/{num2}
+    controller: App\Controller\CalculosController::sumar
+restar:
+    path: /calculos/restar/{num1}/{num2}
+    controller: App\Controller\CalculosController::restar
